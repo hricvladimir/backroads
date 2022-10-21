@@ -195,7 +195,7 @@ Navbar
   font-size: 1.25rem;
 }
 
-.navbar-menu h4 {
+.navbar-menu a {
   margin: 0;
   color: var(--clr-grey-3);
   font-weight: 400;
@@ -246,6 +246,24 @@ Navbar
     display: -webkit-box;
     display: flex;
     gap: 0.6rem;
+    transition: var(--transition);
+  }
+
+  .navbar-menu a,
+  a:visited,
+  a:hover,
+  a:active {
+    color: inherit;
+  }
+
+  .navbar-menu a {
+    transition: var(--transition);
+    color: var(--clr-primary-1);
+  }
+
+  .navbar-menu a:hover {
+    cursor: pointer;
+    color: var(--clr-primary-7);
   }
 
   .navbar-icons {
@@ -272,10 +290,18 @@ Navbar
   position: fixed;
 }
 
-.navbar-mobile h4 {
+.navbar-mobile .option a {
+  transition: var(--transition);
   margin: 0;
   -webkit-transition: var(--transition);
   transition: var(--transition);
+}
+
+.navbar-mobile .option a,
+a:visited,
+a:hover,
+a:active {
+  color: var(--clr-grey-1);
 }
 
 .navbar-mobile .option {
@@ -297,7 +323,7 @@ Navbar
   cursor: pointer;
 }
 
-.navbar-mobile .option:hover h4 {
+.navbar-mobile .option:hover a {
   -webkit-transform: translateX(1%);
   transform: translateX(1%);
 }

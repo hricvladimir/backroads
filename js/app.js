@@ -19,7 +19,7 @@ scrollLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
     // prevent default
     e.preventDefault();
-    links.classList.remove("show-links");
+    links.classList.remove("showLinks");
 
     const id = e.target.getAttribute("href").slice(1);
     const element = document.getElementById(id);
@@ -39,7 +39,7 @@ const mainScroll = document.getElementById("hero-btn");
 if (mainScroll != null) {
   mainScroll.addEventListener("click", (e) => {
     e.preventDefault();
-    const id = document.getElementById("tours");
+    const id = document.getElementById("featured");
     const position = id.offsetTop - 62;
     window.scrollTo({
       left: 0,

@@ -18,14 +18,14 @@
 
 <body>
   <!-- header  -->
-  <header class="header">
+  <header class="header" id="home">
     <h3 class="logo">Back<span class="inline-text-color">Roads</span></h3>
     <nav class="navbar-menu">
-      <h4>Home</h4>
-      <h4>About</h4>
-      <h4>Services</h4>
-      <h4>Featured</h4>
-      <h4>Gallery</h4>
+      <a href="#home" class="scroll-link">Home</a>
+      <a href="#about" class="scroll-link">About</a>
+      <a href="#services" class="scroll-link">Services</a>
+      <a href="#featured" class="scroll-link">Featured</a>
+      <a href="#gallery" class="scroll-link">Gallery</a>
     </nav>
     <div class="navbar-icons">
       <i class="fa-brands fa-facebook"></i>
@@ -40,19 +40,19 @@
   </header>
   <nav class="navbar-mobile" id="navbar-mobile">
     <div class="option">
-      <h4>Home</h4>
+      <a href="#home" class="scroll-link">Home</a>
     </div>
     <div class="option">
-      <h4>About</h4>
+      <a href="#about" class="scroll-link">About</a>
     </div>
     <div class="option">
-      <h4>Services</h4>
+      <a href="#services" class="scroll-link">Services</a>
     </div>
     <div class="option">
-      <h4>Featured</h4>
+      <a href="#featured" class="scroll-link">Featured</a>
     </div>
     <div class="option">
-      <h4>Gallery</h4>
+      <a href="#gallery" class="scroll-link">Gallery</a>
     </div>
   </nav>
   <div class="hero" id="hero">
@@ -67,7 +67,7 @@
   <!-- end of header  -->
 
   <!-- about section -->
-  <section class="about-section" id="about-us">
+  <section class="about-section" id="about">
     <h2 class="about-title">about <span class="inline-text-color">us</span></h2>
     <div class="about-content-container">
       <img class="about-image" src="images/about.jpeg" alt="beach-img">
@@ -86,7 +86,7 @@
   <!-- end of about section -->
 
   <!-- services -->
-  <section class="services-section">
+  <section class="services-section" id="services">
     <h2 class="services-title">our <span class="inline-text-color">services</span></h2>
     <div class="services-contnet-container">
       <div class="services-item">
@@ -121,7 +121,7 @@
   <!--end services -->
 
   <!-- featured tours -->
-  <section class="tours-section" id="tours">
+  <section class="tours-section" id="featured">
     <!-- title -->
     <h2 class="services-title">featured <span class="inline-text-color">tours</span></h2>
     <div class="section-center">
@@ -234,7 +234,7 @@
 
   <!-- gallery  -->
 
-  <section class="gallery-section">
+  <section class="gallery-section" id="gallery">
     <!-- gallery images -->
     <div class="image-container">
       <img src="./images/tour-1.jpeg" alt="">
