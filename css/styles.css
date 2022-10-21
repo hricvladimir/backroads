@@ -332,6 +332,23 @@ a:active {
   height: 30vh;
 }
 
+.navbar-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-icons a i {
+  transition: var(--transition);
+  color: var(--clr-primary-5);
+  font-size: 1.6rem;
+}
+
+.navbar-icons a i:hover {
+  color: var(--clr-primary-7);
+  cursor: pointer;
+}
+
 /*
 =============== 
 Hero
@@ -874,6 +891,15 @@ Footer
   -webkit-box-align: center;
   align-items: center;
   font-size: 1.6rem;
+}
+
+.footer-icons a i {
+  color: var(--clr-white);
+  transition: var(--transition);
+}
+
+.footer-icons a i:hover {
+  color: var(--clr-primary-3);
 }
 
 .back-to-top {
